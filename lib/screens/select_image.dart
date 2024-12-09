@@ -94,6 +94,7 @@ class _DiseaseDetectionScreenState extends State<DiseaseDetectionScreen> {
         ],
       ),
     );
+
   }
 
   @override
