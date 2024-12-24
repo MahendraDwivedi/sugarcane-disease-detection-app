@@ -13,9 +13,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image_picker: ^0.8.7+4 # Latest version for image picking
+  image_picker: ^0.8.7+5   # For gallery and camera
+  camera: ^0.10.0+3   # Latest version for image picking
   http: ^1.2.2
-
+  flutter_gemini: ^3.0.0
+  dash_chat_2: ^0.0.21
+  google_mlkit_image_labeling: ^0.13.0
+  tflite: ^1.1.2
   cupertino_icons: ^1.0.8
   firebase_core: ^3.8.0
   firebase_auth: ^5.3.3
@@ -37,6 +41,14 @@ flutter:
   assets:
      - assets/images/logo1.png
      - assets/images/ic_launcher.webp
+     - assets/model.tflite
+     - assets/images/
+     - assets/images/healthy.jpeg
+     - assets/images/mosaic.jpeg
+     - assets/images/rust.jpeg
+     - assets/images/yellow.jpeg
+     - assets/images/redrot.jpeg
+     - assets/labels.txt
 
   # fonts:
   #   - family: Schyler

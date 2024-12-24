@@ -6,7 +6,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:Cane_Guard/screens/sign_in.dart';
-
+import 'package:flutter_gemini/flutter_gemini.dart';
+const apiKey = 'AIzaSyCMlEm4xM6hD818Jbl21Bug5puhwe0apvw';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   try {
@@ -15,6 +16,8 @@ Future<void> main() async {
   } catch (e) {
     print("Firebase initialization failed: $e");
   }
+  Gemini.init(apiKey: apiKey);
+
   runApp(MyApp());
 }
 
